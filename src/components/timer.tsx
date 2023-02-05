@@ -9,10 +9,10 @@ function Timer() {
     const [sec, setSec] = useState(1);
 
     useEffect(() => {
-        setInterval(() => {
+        let interval = setInterval(() => {
             setSec(_sec => _sec + 1);
-            console.log("we are at: "+sec);
         }, 1000);
+        return () => clearInterval(interval);
     }, []);
 
 
