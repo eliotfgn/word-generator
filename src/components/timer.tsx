@@ -1,6 +1,7 @@
 function Timer() {
     return (
-        <div>
+        <div className="timer">
+            
         </div>
     )
 }
