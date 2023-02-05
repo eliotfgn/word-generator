@@ -1,6 +1,9 @@
+import Timer from "./components/timer"
+
 function App() {
   return (
-    <div>
+    <div className="flex justify-center items-center h-screen">
+      <Timer/>
     </div>
   )
 }
