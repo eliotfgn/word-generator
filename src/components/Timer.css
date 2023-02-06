@@ -1,4 +1,4 @@
 .timer {
     @apply w-96 aspect-square border rounded-full flex justify-center
-    items-center;
+    items-center flex-col;
 }
