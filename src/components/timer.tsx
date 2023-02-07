@@ -6,11 +6,16 @@ function Timer() {
 
     const [word, setWord] = useState("Word");
 
-    const [sec, setSec] = useState(1);
+    const [sec, setSec] = useState(45);
 
     useEffect(() => {
         let interval = setInterval(() => {
-            setSec(_sec => _sec + 1);
+            setSec(_sec => {
+                if (_sec === 0) {
+                    return 45;
+                }
+                return _sec -1;
+            });
         }, 1000);
         return () => clearInterval(interval);
     }, []);
