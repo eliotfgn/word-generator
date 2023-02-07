@@ -1,4 +1,12 @@
 .timer {
-    @apply w-96 aspect-square border rounded-full flex justify-center
+    @apply w-96 aspect-square bg-red-400 rounded-full flex justify-center
     items-center flex-col;
+}
+
+.timer::before {
+    content: "";
+}
+
+.timer::before {
+    @apply relative w-[98%] aspect-square rounded-full bg-[#242424];
 }
