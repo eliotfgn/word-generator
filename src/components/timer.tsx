@@ -26,9 +26,6 @@ function Timer() {
             <p className="bg-[#41410142] px-4 py-2 rounded-md">
                 {word}               
             </p>
-            <p>
-                {sec}
-            </p>
         </div>
     )
 }
