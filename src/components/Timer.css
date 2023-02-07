@@ -1,6 +1,6 @@
 .timer {
     @apply w-96 aspect-square bg-red-400 rounded-full flex justify-center
-    items-center flex-col;
+    items-center flex-col transition-all;
 }
 
 .timer::before {
@@ -9,4 +9,11 @@
 
 .timer::before {
     @apply relative w-[98%] aspect-square rounded-full bg-[#242424];
+}
+
+.timer {
+    background: conic-gradient(
+        #4d5df9 deg,
+        #b44040 0deg
+    );
 }
