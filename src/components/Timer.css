@@ -1,6 +1,6 @@
 .timer {
     @apply w-96 aspect-square bg-red-400 rounded-full flex justify-center
-    items-center flex-col transition-all;
+    items-center flex-col;
 }
 
 .timer::before {
