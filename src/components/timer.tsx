@@ -6,7 +6,7 @@ function Timer() {
 
     const [word, setWord] = useState("Word");
 
-    const [sec, setSec] = useState(45);
+    const [sec, setSec] = useState(30);
 
     useEffect(() => {
         let interval = setInterval(() => {
@@ -33,7 +33,8 @@ function Timer() {
 
     return (
         <div className="timer" id="progress">
-            <p className="bg-[#41410142] px-4 py-2 rounded-md absolute top-1/2">
+            <p class="bg-[#41410142] px-4 py-2 rounded-md absolute top-1/2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas illum reprehenderit architecto libero molestias. Numquam soluta iste incidunt exercitationem quibusdam. Dolor excepturi ad laborum omnis alias assumenda cumque similique aspernatur?
                 {word}               
             </p>
         </div>
